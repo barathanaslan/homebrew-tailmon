@@ -9,8 +9,8 @@ cask "tailmon-app" do
   homepage "https://github.com/barathanaslan/tailmon"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
   depends_on formula: "barathanaslan/tailmon/tailmon"
+  depends_on macos: :sonoma
 
   app "Tailmon.app"
 
