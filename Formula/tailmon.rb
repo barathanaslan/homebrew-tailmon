@@ -5,21 +5,21 @@
 class Tailmon < Formula
   desc "Tailnet-wide resource monitor (agent, TUI, JSON for AI tools)"
   homepage "https://github.com/barathanaslan/tailmon"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/barathanaslan/tailmon/releases/download/v0.3.1/tailmon_0.3.1_darwin_amd64.tar.gz"
-      sha256 "a7c82374bbd7393a9cebbfd9a0aaa6ce5e87ab64168368c85988a83d5a15a3c6"
+      url "https://github.com/barathanaslan/tailmon/releases/download/v0.3.2/tailmon_0.3.2_darwin_amd64.tar.gz"
+      sha256 "03bfbe65046113159280decc03221336204b55e74291b7ec615ac291dc4710cf"
 
       define_method(:install) do
         bin.install "tailmon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/barathanaslan/tailmon/releases/download/v0.3.1/tailmon_0.3.1_darwin_arm64.tar.gz"
-      sha256 "23bc45445489f1f3528125433c03c2071dc1ab55661f43d6227062006c95face"
+      url "https://github.com/barathanaslan/tailmon/releases/download/v0.3.2/tailmon_0.3.2_darwin_arm64.tar.gz"
+      sha256 "a27e482d431a8d78758b19817c2606a4470f1cbb2e1457c7da4d7accc38c221f"
 
       define_method(:install) do
         bin.install "tailmon"
@@ -29,15 +29,15 @@ class Tailmon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/barathanaslan/tailmon/releases/download/v0.3.1/tailmon_0.3.1_linux_amd64.tar.gz"
-      sha256 "4546d1d2ef77b3ef32be74196744747ff4090fb26ae6583e9651ac42ab0e3c25"
+      url "https://github.com/barathanaslan/tailmon/releases/download/v0.3.2/tailmon_0.3.2_linux_amd64.tar.gz"
+      sha256 "7b54f8275d233cd91a6963b259dd775c7b69130869b483cf476e005793af98dd"
       define_method(:install) do
         bin.install "tailmon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/barathanaslan/tailmon/releases/download/v0.3.1/tailmon_0.3.1_linux_arm64.tar.gz"
-      sha256 "dc53bffd3ae3bcce3a23c3646e2298c5e9feb255f1688f6351d55342fcd4ffa8"
+      url "https://github.com/barathanaslan/tailmon/releases/download/v0.3.2/tailmon_0.3.2_linux_arm64.tar.gz"
+      sha256 "a53bfd3e6420b51ebff8f1bd54e243cfdd29b02aaeab332607197710a706620d"
       define_method(:install) do
         bin.install "tailmon"
       end
